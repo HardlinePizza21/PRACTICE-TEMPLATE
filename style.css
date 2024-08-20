@@ -1,0 +1,192 @@
+/* Font setting Start */
+
+@font-face {
+    font-family: 'News Gothic BT';
+    src: url('fonts/News-Gothic-BT-Roman-Condensed-Font.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Font setting End*/
+
+/* Global Settings Start */
+
+*{
+    font-family: 'News Gothic BT';
+}
+
+/* Global Settings End */
+
+/* Scroll bar Start */
+
+html ::-webkit-scrollbar-track{
+    background: linear-gradient(to bottom, #005575 40%, rgba(0, 159, 219, 0.5) 100%);
+}
+
+html ::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 5px;
+}
+
+html ::-webkit-scrollbar{
+    width: 10px;
+}
+
+/* Scroll bar End */
+
+/* b-example-divider Start */
+.b-example-divider {
+    width: 100%;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    height: 3rem;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15)
+}
+/* b-example-divider End */
+
+/* Nav Bar Start */
+
+.navbar {
+    height: 20vh;
+    background-color: #005575;
+    border-bottom: 2px solid gray;
+}
+
+.navbar .navbar-nav{
+    font-size: 20px;
+}
+
+.navbar a {
+    background-color: #005575;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.navbar .btn {
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+/* Nav Bar End */
+
+/* Principal Screnn Start */
+
+#home #logo{
+    padding-right: 20px;
+}
+
+#home h2{
+    color: white;
+}
+
+#home #home-content{
+    background: 
+        linear-gradient(to bottom, rgba(0, 85, 117,0.9) 40%, rgba(90, 138, 156, 0.5) 100%),
+        url('img/bcAnimated.png');
+    background-size: cover;
+    background-repeat: repeat-y;
+    height: 80vh;
+    animation: desplazarFondo 10s linear infinite;
+
+}
+
+
+
+@keyframes desplazarFondo {
+    from {
+        background-position: 0 0%;
+    }
+    to {
+        background-position: 0 150%;
+    }
+}
+
+#typing {
+    width: 100%;
+    animation: typing 2s steps(60), step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Principal Screnn End */
+
+/* About Us Start */
+
+#about #heading{
+    text-align: center;
+    border-bottom: 2px solid #005575;
+}
+
+/* About Us End */
+
+/* Services start */
+
+#services #icon-box{
+    width: 40px;
+    height: 40px;
+}
+
+#services #icon{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Services end */
+
+/* Footer Start */
+
+#footer {
+    /* background: 
+        linear-gradient(to top, rgba(0, 85, 117, 0.9) 40%, rgba(0, 159, 219, 0.5) 100%),
+        url('img/bc1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center; */
+}
+
+
+/* Footer End */
+
+/* Contact us star */
+
+#contact {
+    background: 
+    linear-gradient(to bottom, rgba(0, 85, 117, 0.9) 40%, rgba(0, 159, 219, 0.5) 100%),
+    url('img/bc2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+}
+
+/* Contact us end */
+
+/* Float Button Start */
+
+#btn-contact {
+    position: fixed;
+    right: 50px;
+    bottom: 40px;
+    width: 70px;
+    height: 70px;
+}
+
+#btn-contact i{
+    font-size: 2.5rem;
+}
+
+/* Float Button End */
+
